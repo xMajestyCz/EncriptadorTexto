@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #D8DFE8;
+}
+.titulo{
+    color: #0A3871;
+}
+.encriptar-desencriptar{
+    display: flex;
+    gap: 183px;
+}
+.texto{
+    margin-left: 240px;
+    color: #0A3871;
+    font-weight: 600;
+}
+.fondo-mensaje-desencriptado{
+    width: 400px;
+    height: 80vh;
+    background-color: #E8E8E8;
+    border-radius: 32px;
+}
