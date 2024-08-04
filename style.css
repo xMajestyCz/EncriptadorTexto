@@ -27,17 +27,22 @@ header{
     gap: 1rem;
 }
 .texto{
-    margin: 4rem 22.8rem 23rem 10rem;
+    margin: 4rem 1rem 0 10rem;
     font-size: 2rem;
+    border: none;
+    color: #0A3871;
+    outline: none;
+    width: 43rem;
+    height: 25rem;
+    background-color: #E5E5E5;
+    resize: none;
+}
+.texto::placeholder{
     color: #0A3871;
     font-weight: 600;
 }
 .section-encriptar-desencriptar{
     margin-left: 10rem;
-}
-.div-boton{
-    display: flex;
-    gap: 1.5rem;
 }
 .advertencia{
     display: flex;
@@ -58,6 +63,10 @@ header{
     font-size: 0.8rem;
     font-weight: normal;
     margin-bottom: 1rem;
+}
+.div-boton{
+    display: flex;
+    gap: 1.5rem;
 }
 .boton{
     border-radius: 1.5rem;
@@ -113,7 +122,8 @@ header{
         margin: 4.5rem 0 7.2rem 2.5rem;
     }
     .texto{
-        margin: 0 0 34.2rem 0;
+        margin: 0 0 0 0;
+        height: 38rem;
     }
     .texto, .section-encriptar-desencriptar{
         margin-left: 2.5rem;
@@ -143,7 +153,9 @@ header{
         padding: 1.5rem 0 1.5rem 1rem;
     }
     .texto{
-        margin: 3.5rem 0 15.6rem 1rem;
+        margin: 3.5rem 0 0 1rem;
+        width: 21.7rem;
+        height: 19rem;
     }
     .section-encriptar-desencriptar{
         margin: 0 1rem 0 1rem;

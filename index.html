@@ -12,15 +12,15 @@
             <h1 class="titulo">Encriptador de Texto</h1>
         </header>
         <main class="encriptar-desencriptar">
-            <p class="texto">Ingrese el texto aquí</p>
+            <textarea placeholder="Ingrese el texto aquí" class="texto" id="texto"></textarea>
             <section class="section-encriptar-desencriptar">
                 <div class="advertencia">
                     <span class="signo">!</span>
                     <p class="condicion">Solo letras minúsculas y sin acentos</p>
                 </div>
                 <div class="div-boton">
-                    <button class="boton">Encriptar</button>
-                    <button class="boton">Desencriptar</button>
+                    <button onclick="encriptar()" class="boton" id="encriptar" >Encriptar</button>
+                    <button onclick="desencriptar()" class="boton" id="desencriptar" >Desencriptar</button>
                 </div>
             </section>
         </main>
@@ -32,5 +32,6 @@
             <p class="no-strong">Ingrese el texto que desees encriptar o desencriptar en la parte izquierda.</p>
         </div>
     </aside>
+    <script src="app.js" defer></script>
 </body>
 </html>
