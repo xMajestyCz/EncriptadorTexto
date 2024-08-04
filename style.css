@@ -5,9 +5,12 @@
     font-family: "Chakra Petch", sans-serif;
 }
 body{
-    background-color: #D8DFE8;
+    background-color: #E5E5E5;
     display: flex;
-    
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+
 }
 header{
     height: auto;
@@ -15,34 +18,46 @@ header{
 .titulo{
     margin: 1.5rem 0 0 3.8rem;
     color: #0A3871;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .encriptar-desencriptar{
     display: flex;
-
     flex-direction: column;
     height: 100%;
-}
-.section-encriptar-desencriptar{
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 .texto{
-    margin: 5rem 27.8rem 18rem 15rem;
-    font-size: 1.5rem;
+    margin: 4rem 22.8rem 23rem 10rem;
+    font-size: 2rem;
     color: #0A3871;
     font-weight: 600;
 }
-
+.section-encriptar-desencriptar{
+    margin-left: 10rem;
+}
 .div-boton{
     display: flex;
     gap: 1.5rem;
 }
-.footer-parrafo{
+.advertencia{
+    display: flex;
+}
+.signo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.1rem;
+    height: 1.1rem;
+    color: #FFFFFF;
+    background-color: #65747D;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+.condicion{
     color: #495057;
     font-size: 0.8rem;
     font-weight: normal;
+    margin-bottom: 1rem;
 }
 .boton{
     border-radius: 1.5rem;
@@ -50,23 +65,34 @@ header{
     height: 4.2rem;
     cursor: pointer;
     border: 1px solid #0A3871;
-    background-color: #0A3871;
-    color: #FFFFFF;
+    background-color: #D8DFE8;
+    color: #0A3871;
     font-size: 1rem;
     font-weight: normal;
 }
-.boton:last-child{
-    color: #0A3871;
-    background-color: #D8DFE8;
-    
+.boton:hover{
+    color: #D8DFE8;
+    background-color: #0A3871;
 }
 .fondo-mensaje-desencriptado{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
     width: 25rem;
-    height: 84vh;
+    height: 39rem;
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 2rem;
-    margin-top: 2.5rem;
+    margin: 2.5rem 2.5rem 2.5rem 0;
+    margin-left: auto;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 0 #ece9e9;
+}
+.img{
+    height: 19rem;
+    width: 21rem;
+    margin: 0 2rem 0 2rem;
 }
 .mensaje-no-encontrado{
     margin: 0 2rem 0 2rem;
@@ -76,4 +102,63 @@ header{
 .mensaje-no-encontrado .no-strong{
     margin-top: 1rem;
     font-size: 1rem;
+}
+@media (max-width: 769px){
+    body{
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo{
+        margin: 4.5rem 0 7.2rem 2.5rem;
+    }
+    .texto{
+        margin: 0 0 34.2rem 0;
+    }
+    .texto, .section-encriptar-desencriptar{
+        margin-left: 2.5rem;
+    }
+    .boton{
+        width: 20.7rem;
+        height: 4.2rem;
+    }
+    .fondo-mensaje-desencriptado{
+        width: 43rem;
+        height: 8.3rem;
+        margin: 4rem 2.5rem 0 2.5rem;
+    }
+    .img{
+        display: none;
+    }
+}
+@media (max-width: 376px){
+    body{
+        overflow: auto;
+        width: auto;
+        height: auto;
+    }
+    .titulo{
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+    .texto{
+        margin: 3.5rem 0 15.6rem 1rem;
+    }
+    .section-encriptar-desencriptar{
+        margin: 0 1rem 0 1rem;
+    }
+    .div-boton{
+        display: flex;
+        flex-direction: column;
+    }
+    .boton{
+        width: 21.4rem;
+        height: 4.2rem;
+    }
+    .fondo-mensaje-desencriptado{
+        width: 20.4rem;
+        height: 11.6rem;
+        margin: 4rem 1.5rem 0 1.5rem;
+    }
 }
