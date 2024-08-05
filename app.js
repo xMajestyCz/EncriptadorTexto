@@ -1,22 +1,21 @@
 let vocales = ['a','e','i','o','u'];
 let encriptacion = ['ai','enter','imes','ober','ufat'];
-let texto = document.getElementById("texto").value;
 
-function encriptar(a,b,c){
-    a;
-    if(a == b){
-        for(let i = 1; i <= 5; i++){
-            b[i] = c[i];
-            i++;
-        }
+function datos(){
+    return document.getElementById('texto').value;
+}
+
+function encriptar(){
+    let texto = datos();
+    for(let i = 0; i < vocales.length; i++){
+        texto = texto.replace(vocales[i], encriptacion[i]);
     }
-    let botonEncriptar = document.querySelector('#encriptar');
-    console.log(botonEncriptar);
+    console.log(texto);
 }
-function desencriptar(a){
-    a;
-    let botonDesencriptar = document.querySelector('#desencriptar');
+function desencriptar(){
+    let texto = datos();
+    for(let i = 0; i < vocales.length; i++){
+        texto = texto.replace(encriptacion[i], vocales[i]);
+    }
+    console.log(texto);
 }
-
-encriptar(texto,vocales,encriptacion);
-desencriptar(texto);
