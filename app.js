@@ -1,21 +1,25 @@
-let vocales = ['a','e','i','o','u'];
-let encriptacion = ['ai','enter','imes','ober','ufat'];
+let vocales = ['e','i','a','o','u'];
+let encriptacion = ['enter','imes','ai','ober','ufat'];
 
-function datos(){
-    return document.getElementById('texto').value;
-}
+function recorrer(a,b){
+    let texto = document.querySelector('.texto').value;
+    let img = document.querySelector('.img');
+    let sinTexto = document.querySelector('.mensaje-no-encontrado');
+    if(texto == null){
 
-function encriptar(){
-    let texto = datos();
-    for(let i = 0; i < vocales.length; i++){
-        texto = texto.replace(vocales[i], encriptacion[i]);
     }
-    console.log(texto);
+    else{
+        img.setAttribute('disabled');
+        sinTexto.setAttribute('disabled');
+        for(let i = 0; i < a.length; i++){
+            texto = texto.replaceAll(a[i], b[i]);
+        }
+    }
+    
+}
+function encriptar(){
+    recorrer(vocales,encriptacion);
 }
 function desencriptar(){
-    let texto = datos();
-    for(let i = 0; i < vocales.length; i++){
-        texto = texto.replace(encriptacion[i], vocales[i]);
-    }
-    console.log(texto);
+    recorrer(encriptacion,vocales);
 }
