@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-primario: #071952;
+    --color-secundario: #;
+    --color-terciario: #;
+    --color-cuaternario: #;
+}
 *{
     padding: 0;
     margin: 0;
@@ -7,10 +13,10 @@
 body{
     background-color: #E5E5E5;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    overflow: hidden;
     box-sizing: border-box;
-
 }
 header{
     height: auto;
@@ -23,7 +29,7 @@ header{
 .encriptar-desencriptar{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     gap: 1rem;
 }
 .texto{
@@ -33,7 +39,7 @@ header{
     color: #0A3871;
     outline: none;
     width: 43rem;
-    height: 25rem;
+    height: 20rem;
     background-color: #E5E5E5;
     resize: none;
 }
@@ -68,7 +74,7 @@ header{
     display: flex;
     gap: 1.5rem;
 }
-.boton{
+.boton, .copiar{
     border-radius: 1.5rem;
     width: 20.5rem;
     height: 4.2rem;
@@ -79,7 +85,8 @@ header{
     font-size: 1rem;
     font-weight: normal;
 }
-.boton:hover{
+.boton:hover, .copiar:hover{
+    transition: all .3s ease;
     color: #D8DFE8;
     background-color: #0A3871;
 }
@@ -94,9 +101,9 @@ header{
     background-color: #FFFFFF;
     border-radius: 2rem;
     margin: 2.5rem 2.5rem 2.5rem 0;
-    margin-left: auto;
+    
     box-sizing: border-box;
-    box-shadow: 0 0 8px 0 #ece9e9;
+    box-shadow: 0 0 50rem 0 #cfcbcb;
 }
 .img{
     height: 19rem;
@@ -112,17 +119,36 @@ header{
     margin-top: 1rem;
     font-size: 1rem;
 }
-@media (max-width: 769px){
+.nuevo-texto{
+    color: #495057;
+    margin: 2rem 2rem 1rem 2rem;
+    height: 32rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: #FFFFFF;
+}
+.copiar{
+    width: 21rem;
+    margin: 0 2rem 2rem 2rem;
+}
+.aparecer{
+    display: none;
+}
+@media (max-width: 1240px){
     body{
         overflow: auto;
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     .titulo{
         margin: 4.5rem 0 7.2rem 2.5rem;
     }
     .texto{
         margin: 0 0 0 0;
+        width: auto;
         height: 38rem;
     }
     .texto, .section-encriptar-desencriptar{
@@ -133,22 +159,32 @@ header{
         height: 4.2rem;
     }
     .fondo-mensaje-desencriptado{
-        width: 43rem;
-        height: 8.3rem;
-        margin: 4rem 2.5rem 0 2.5rem;
+        width: auto;
+        max-width: 43rem;
+        min-height: 8.3rem;
+        height: auto;
+        margin: 4rem 2.5rem 2.5rem 2.5rem;
+    }
+    .nuevo-texto{
+        width: 39rem;
+        height: 11.2rem;
+    }
+    .copiar{
+        width: 39rem;
+        height: 4.1rem;
     }
     .img{
         display: none;
     }
 }
-@media (max-width: 376px){
+@media (max-width: 426px){
     body{
         overflow: auto;
         width: auto;
         height: auto;
     }
     .titulo{
-        width: 100%;
+        width: auto;
         margin: 0;
         padding: 1.5rem 0 1.5rem 1rem;
     }
@@ -170,7 +206,17 @@ header{
     }
     .fondo-mensaje-desencriptado{
         width: 20.4rem;
-        height: 11.6rem;
-        margin: 4rem 1.5rem 0 1.5rem;
+        height: auto;
+        min-height: 11.6rem;
+        max-height: 37.1rem;
+        margin: 4rem 1.5rem 1.5rem 1.5rem;
+    }
+    .nuevo-texto{
+        width: 17.4rem;
+        height: 27.1rem;
+    }
+    .copiar{
+        width: 17.4rem;
+        height: 4.1rem;
     }
 }
