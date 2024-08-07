@@ -10,6 +10,7 @@ Este proyecto es un encriptador de texto que permite cifrar y descifrar mensajes
   <li>Opción de copiar el texto encriptado/desencriptado</li>
   <li>Interfaz dinámica y amigable con el usuario</li>
   <li>la encriptación/desencriptación solo funcionara si el texto está en minúsculas y sin acentos</li>
+  <li>Es responsive</li>
 </ul>
 
 <h2>Uso</h2>
