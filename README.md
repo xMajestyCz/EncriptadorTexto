@@ -17,5 +17,5 @@ Debe ingresar el texto que desees encriptar o desencriptar, las unicas letras qu
 ```['e','i','a','o','u']``` por ```['enter','imes','ai','ober','ufat']``` en ese orden (e por enter, i por imes y asi sucesivamente).
 Una vez el texto haya sido encriptado/desencriptado tienes la opción de poder copiar el texto encriptado/desencriptado.
 
-
+<h2>Contacto</h2>
 Para cualquier consulta, por favor contacta a henaoandres2405@gmail.com.
