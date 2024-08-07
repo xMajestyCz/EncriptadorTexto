@@ -4,7 +4,7 @@
 <h2>Descripción</h2>
 Este proyecto es un encriptador de texto que permite cifrar y descifrar mensajes utilizando varios algoritmos de encriptación. Ideal para mantener la privacidad y seguridad de la información.
 
-<h2>Caracteristicas</h2>
+<h2>Características</h2>
 <ul>
   <li>Encriptación y desencriptación de texto.</li>
   <li>Opción de copiar el texto encriptado/desencriptado.</li>
