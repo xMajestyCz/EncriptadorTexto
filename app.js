@@ -26,7 +26,7 @@ function recorrer(a,b){
     nuevoTexto.value = texto;
 }
 function quitarImg(){
-    if(window.innerWidth < 770){
+    if(window.innerWidth < 1240){
         let quitarImg = document.querySelector('.img');
         quitarImg.style.display = "none";
     }
