@@ -17,7 +17,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-header{
+.titulo{
     margin-top: 5rem;
     height: auto;
 }
@@ -203,11 +203,9 @@ a:hover, .link:hover{
     }
     
 }
-@media (max-width: 426px){
+@media (max-width: 730px){
     body{
-        overflow: auto;
-        width: auto;
-        height: auto;
+        height: 100vh;
     }
     .titulo{
         width: auto;
@@ -239,8 +237,7 @@ a:hover, .link:hover{
     }
     .nuevo-texto{
         width: 17.4rem;
-        height: auto;
-        max-height: 27.1rem;
+        height: 27.1rem;
     }
     .copiar{
         width: 17.4rem;
