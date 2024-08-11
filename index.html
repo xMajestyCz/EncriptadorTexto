@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <title>Encriptador de texto</title>
 </head>
 <body>
-    <section class="lado-izquierdo">
-        <header>
-            <h1 class="titulo">Encriptador de Texto</h1>
-        </header>
-        <main class="encriptar-desencriptar">
+    <main>
+        <section>
+            <header>
+                <h1 class="titulo">Encriptador de Texto</h1>
+            </header>
             <textarea placeholder="Ingrese el texto aquí" class="texto"></textarea>
             <section class="section-encriptar-desencriptar">
                 <div class="advertencia">
@@ -23,17 +24,30 @@
                     <button onclick="desencriptar()" class="boton" id="desencriptar" >Desencriptar</button>
                 </div>
             </section>
-        </main>
-    </section>
-    <aside class="fondo-mensaje-desencriptado">
-        <img src="buscando.png" alt="imagen referente a una persona con una lupa" class="img quitar">
-        <textarea class="nuevo-texto aparecer" disabled></textarea>
-        <div class="mensaje-no-encontrado quitar">
-            <p><strong class="strong">Ningún mensaje fue encontrado</strong></p>
-            <p class="no-strong">Ingrese el texto que desees encriptar o desencriptar en la parte izquierda.</p>
-        </div>
-        <button onclick="copiar()" class="copiar aparecer">Copiar</button>
-    </aside>
+        </section>
+        <aside class="fondo-mensaje-desencriptado">
+            <img src="buscando.png" alt="imagen referente a una persona con una lupa" class="img quitar">
+            <textarea class="nuevo-texto aparecer" disabled></textarea>
+            <div class="mensaje-no-encontrado quitar">
+                <p><strong class="strong">Ningún mensaje fue encontrado</strong></p>
+                <p class="no-strong">Ingrese el texto que desees encriptar o desencriptar en la parte izquierda.</p>
+            </div>
+            <button onclick="copiar()" class="copiar aparecer">Copiar</button>
+        </aside>
+    </main>
+    <footer>
+        <label class="autor">Diseñado por Andrés Henao Hilders</label>
+        <a href="https://www.linkedin.com/in/andres-henao-cz/" id="linkdedin" target="_blank">
+            <i class="ph ph-linkedin-logo"></i>
+            <label class="link" for="linkedin">Linkedin</label>
+        </a>
+        <a href="https://github.com/xMajestyCz" id="github" target="_blank">
+            <i class="ph-light ph-github-logo"></i>
+            <label class="link" for="github">GitHub</label>
+        </a>
+        <i class="ph ph-copyright copyright"></i>
+        <label>2024</label>
+    </footer>
     <script src="app.js" defer></script>
 </body>
 </html>

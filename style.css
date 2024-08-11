@@ -7,12 +7,18 @@
 body{
     background-color: #E5E5E5;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     height: 100vh;
     box-sizing: border-box;
 }
+main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 header{
+    margin-top: 5rem;
     height: auto;
 }
 .titulo{
@@ -27,13 +33,13 @@ header{
     gap: 1rem;
 }
 .texto{
-    margin: 4rem 1rem 0 10rem;
+    margin: 4rem 2.5rem 0 10rem;
     font-size: 2rem;
     border: none;
     color: #0A3871;
     outline: none;
-    width: 43rem;
-    height: 20rem;
+    width: 42rem;
+    height: 21rem;
     background-color: #E5E5E5;
     resize: none;
 }
@@ -94,7 +100,7 @@ header{
     text-align: center;
     background-color: #FFFFFF;
     border-radius: 2rem;
-    margin: 2.5rem 2.5rem 2.5rem 0;
+    margin: 1.5rem 2.5rem 1rem 0;
     box-sizing: border-box;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, .2));
 }
@@ -129,20 +135,47 @@ header{
 .aparecer{
     display: none;
 }
+footer{
+    display: flex;
+    align-items: center;
+    color: #D8DFE8;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+    background-color: #0A3871;
+    height: 2.5rem;
+}
+a{
+    text-decoration: none;
+    margin: 0 0.5rem 0 1rem;
+    color: #D8DFE8;
+    cursor: pointer;
+}
+.link{
+    cursor: pointer;
+}
+a:hover, .link:hover{
+    color: #65747D;
+}
+.logo
+.copyright{
+    margin-left: 1rem;
+}
+
 @media (max-width: 1240px){
     body{
-        overflow: auto;
-        display: flex;
+        height: 100%;
+    }
+    main{
         flex-direction: column;
-        height: auto;
     }
     .titulo{
         margin: 4.5rem 0 7.2rem 2.5rem;
     }
     .texto{
         margin: 0 0 0 0;
-        width: auto;
-        height: 38rem;
+        width: 43rem;
+        height: 36rem;
     }
     .texto, .section-encriptar-desencriptar{
         margin-left: 2.5rem;
@@ -160,7 +193,7 @@ header{
     }
     .nuevo-texto{
         width: 39rem;
-        height: 11.2rem;
+        max-height: 11.2rem;
     }
     .copiar{
         width: 39rem;
@@ -169,6 +202,7 @@ header{
     .img{
         display: none;
     }
+    
 }
 @media (max-width: 426px){
     body{
@@ -184,7 +218,7 @@ header{
     .texto{
         margin: 3.5rem 0 0 1rem;
         width: 21.7rem;
-        height: 19rem;
+        height: 18rem;
     }
     .section-encriptar-desencriptar{
         margin: 0 1rem 0 1rem;
@@ -206,10 +240,14 @@ header{
     }
     .nuevo-texto{
         width: 17.4rem;
-        height: 27.1rem;
+        height: auto;
+        max-height: 27.1rem;
     }
     .copiar{
         width: 17.4rem;
         height: 4.1rem;
+    }
+    .link{
+        display: none;
     }
 }

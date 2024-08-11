@@ -9,6 +9,7 @@ function quitarAparecer(a,b){
         element.style.display = "none";
     });
 }
+
 function recorrer(a,b){
     let texto = document.querySelector('.texto').value;
     let nuevoTexto = document.querySelector('.nuevo-texto');
@@ -25,26 +26,41 @@ function recorrer(a,b){
     }
     nuevoTexto.value = texto;
 }
+
 function quitarImg(){
     if(window.innerWidth < 1240){
         let quitarImg = document.querySelector('.img');
         quitarImg.style.display = "none";
     }
 }
-function encriptar(){
-    recorrer(vocales,encriptacion);
-    quitarImg();
+
+function cambioCopiar(a){
+    let copiado = document.querySelector('.copiar');
+    copiado.innerHTML = a;
 }
-function desencriptar(){
-    recorrer(encriptacion,vocales);
-    quitarImg();
+
+function textoCopiar(){
+    cambioCopiar('Copiar')
 }
+
 async function copiar() {
     var textoCopiado = document.querySelector(".nuevo-texto").value;
     try {
         await navigator.clipboard.writeText(textoCopiado);
-        alert("Texto copiado!");
+        cambioCopiar('¡Copiado!')
     } catch (err) {
         alert("Error al copiar el texto");
     }
+}
+
+function encriptar(){
+    textoCopiar();
+    recorrer(vocales,encriptacion);
+    quitarImg();
+}
+
+function desencriptar(){
+    textoCopiar();
+    recorrer(encriptacion,vocales);
+    quitarImg();
 }
