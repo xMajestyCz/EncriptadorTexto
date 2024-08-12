@@ -204,9 +204,6 @@ a:hover, .link:hover{
     
 }
 @media (max-width: 730px){
-    body{
-        height: 100vh;
-    }
     .titulo{
         width: auto;
         margin: 0;
