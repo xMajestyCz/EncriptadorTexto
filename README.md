@@ -15,7 +15,7 @@ Este proyecto es un encriptador de texto que permite cifrar y descifrar mensajes
 
 <h2>Uso</h2>
 Debe ingresar el texto que desees encriptar o desencriptar, las unicas letras que cambian son:
-```['e','i','a','o','u']``` por ```['enter','imes','ai','ober','ufat']``` en ese orden (e por enter, i por imes y asi sucesivamente).
+<strong>['e','i','a','o','u']</strong> por <strong>['enter','imes','ai','ober','ufat']</strong> en ese orden (e por enter, i por imes y asi sucesivamente).
 <br>
 Una vez el texto haya sido encriptado/desencriptado tienes la opción de poder copiar el texto encriptado/desencriptado.
 
