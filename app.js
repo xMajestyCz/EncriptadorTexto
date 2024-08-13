@@ -27,13 +27,6 @@ function recorrer(a,b){
     nuevoTexto.value = texto;
 }
 
-function quitarImg(){
-    if(window.innerWidth < 1240){
-        let quitarImg = document.querySelector('.img');
-        quitarImg.style.display = "none";
-    }
-}
-
 function cambioCopiar(a){
     let copiado = document.querySelector('.copiar');
     copiado.innerHTML = a;
@@ -56,11 +49,9 @@ async function copiar() {
 function encriptar(){
     textoCopiar();
     recorrer(vocales,encriptacion);
-    quitarImg();
 }
 
 function desencriptar(){
     textoCopiar();
     recorrer(encriptacion,vocales);
-    quitarImg();
 }

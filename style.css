@@ -176,8 +176,14 @@ a:hover, .link:hover{
         width: 43rem;
         height: 36rem;
     }
-    .texto, .section-encriptar-desencriptar{
+    .texto .advertencia{
         margin-left: 2.5rem;
+    }
+    .section-encriptar-desencriptar{
+        margin-left: 0;
+    }
+    .div-boton{
+        justify-content: center;
     }
     .boton{
         width: 20.7rem;
@@ -201,9 +207,8 @@ a:hover, .link:hover{
     .img{
         display: none;
     }
-    
 }
-@media (max-width: 730px){
+@media (max-width: 690px){
     .titulo{
         width: auto;
         margin: 0;
